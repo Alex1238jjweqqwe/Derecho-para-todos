@@ -1,0 +1,60 @@
+<!-- Pantalla inicial (Lobby) -->
+<div id="lobby" class="screen">
+    <h1>⚖️ Derecho para Todos 🤝</h1>
+    <h2 class="subtitulo">"Derechos básicos que todos debemos conocer para evitar su vulneraciónes."</h2>
+
+    <!-- Botones para los temas -->
+    <div class="topics">
+        <button onclick="showTopic('derechosHumanos')">Derechos Humanos Básicos</button>
+        <button onclick="showTopic('derechoTrabajo')">Derecho al Trabajo</button>
+        <button onclick="showTopic('derechoProteccion')">Derecho a la Protección del Consumidor</button>
+        <button onclick="showTopic('derechosDetencion')">Derechos en Situaciones de Detención</button>
+        <button onclick="showTopic('derechoPropiedad')">Derecho a la Propiedad</button>
+        <button onclick="showTopic('derechoFamiliar')">Derecho Familiar</button>
+        <button onclick="showTopic('derechoPenal')">Derecho Penal Básico</button>
+        <button onclick="showTopic('derechoCivil')">Derecho Civil</button>
+        <button onclick="showTopic('derechoSalud')">Derecho a la Salud y Educación</button>
+        <button onclick="showTopic('derechoPrivacidad')">Derecho a la Privacidad y Protección de Datos</button>
+    </div>
+
+    <!-- Botón para iniciar el quiz -->
+    <button class="green" onclick="startQuiz()">Aprender con ejemplos 🎮</button>
+
+    <!-- Link a la constitución -->
+    <button class="blue" onclick="window.open('https://www.defensa.gob.ec/wp-content/uploads/downloads/2021/02/Constitucion-de-la-Republica-del-Ecuador_act_ene-2021.pdf', '_blank')">Constitución de la República del Ecuador (2008) 📜</button>
+</div>
+
+<!-- Pantalla de Artículos  -->
+<div id="topic" class="screen" style="display: none;">
+    <h2>Artículo</h2>
+    <div id="article"></div>
+    <button onclick="backToLobby()">Volver al Inicio</button>
+</div>
+
+<!-- Pantalla del Quiz (ocult. inicialmente) -->
+<div id="quizScreen" class="screen" style="display: none;">
+    <h2>Quiz: Derecho para Todos</h2>
+    <div id="quizQuestions"></div>
+    <button onclick="showResults()">Ver Resultados</button>
+    <button onclick="backToLobby()">Volver al Lobby</button>
+</div>
+
+<!-- Pantalla de Resultados (oculta inicialmente) -->
+<div id="quizResults" class="screen" style="display: none;">
+    <h2>Resultados del Quiz</h2>
+    <p id="correctAnswers"></p>
+    <p id="incorrectAnswers"></p>
+    <button onclick="backToLobby()">Volver al Inicio</button>
+</div>
+
+<!-- Pantalla del Propósito de la App (oculta inicialmente) -->
+<div id="appPurpose" class="screen" style="display: none;">
+    <h1>Propósito de la App</h1>
+    <p>Hola, mundo</p>
+    <button onclick="backToLobby()">Volver al inicio</button>
+</div>
+
+<!-- Nombre del autor fino al final -->
+<p id="author" class="author">Creado por: Joffre Vintimilla, Kevin Yambay, Juan Quilli, Brayan Pachar</p>
+
+<script src="script.js"></script>
